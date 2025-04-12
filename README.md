@@ -19,4 +19,6 @@ Implement a calculator that handles numbers inside a string and using Test-Drive
 # TestCases
 - handle empty string : function should return 0
 - handle addition of one number: function should return number itself
+- handle invalid single character: should raise value error
+
 
