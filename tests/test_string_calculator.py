@@ -16,3 +16,8 @@ def test_invalid_character():
     with pytest.raises(ValueError) as error_info:
         calc.add("?")
     assert str(error_info.value)=="Invalid string provided"
+
+def test_add_comma_seperated_numbers():
+    calc=Calculator()
+    result=calc.add("1,2,3")
+    assert result==6
