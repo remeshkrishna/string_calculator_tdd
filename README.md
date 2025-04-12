@@ -2,31 +2,31 @@
 Implement a calculator that handles numbers inside a string and using Test-Driven-Development approach
 
 # Steps
-- create virtual environment
+- **create virtual environment**
     python -m venv mycalcvenv
-- Activate virtual environment 
+- **Activate virtual environment** 
     .\mycalcvenv\Scripts\Activate.ps1
-- create requirements.txt with configuration
+- **create requirements.txt with configuration**
     pytest
-- install pytest by running requirements.txt
+- **install pytest by running requirements.txt**
     pip install -r requirements.txt
-- Create test_string_calculator.py under ./tests
-- Create pytest.ini and specify test folder
-- Create string_calculator folder under the root folder and add __init__.py to import as module
-- Create a calculator.py under string_calculator folder with an empty Calculator class
-- Configure Python: Configure Tests in vscode
+- **Create test_string_calculator.py under ./tests**
+- **Create pytest.ini and specify test folder**
+- **Create string_calculator folder under the root folder and add __init__.py to import as module**
+- **Create a calculator.py under string_calculator folder with an empty Calculator class**
+- **Configure Python: Configure Tests in vscode**
 
 # TestCases
-- handle empty string : function should return 0
-- handle addition of one number: function should return number itself
-- handle invalid single character: should raise value error
-- handle comma seperated numbers 
-- handle string with newline and comma
-- handle custom delimiter
-- handle negative numbers
-- handle faulty custom delimiter
-- handle multiple character delimiters
-- handle multiple choice delimiters
-- handle multiple choice delimiters with multiple characters
-- handle numbers greater than 1000
+- **handle empty string :** function should return 0
+- **handle addition of one number:** function should return number itself
+- **handle invalid single character:** should raise value error
+- **handle comma seperated numbers** 
+- **handle string with newline and comma**
+- **handle custom delimiter**
+- **handle negative numbers**
+- **handle faulty custom delimiter**
+- **handle multiple character delimiters**
+- **handle multiple choice delimiters**
+- **handle multiple choice delimiters with multiple characters**
+- **handle numbers greater than 1000**
 
