@@ -31,3 +31,9 @@ def test_add_with_custom_delimiter():
     calc=Calculator()
     result=calc.add("//;\n1;2")
     assert result==3
+
+def test_add_negative_numbers():
+    calc=Calculator()
+    with pytest.raises(Exception) as err_info:
+        calc.add("-10,-5")
+    assert str(err_info.value) == "negatives not allowed: -10,-5"
