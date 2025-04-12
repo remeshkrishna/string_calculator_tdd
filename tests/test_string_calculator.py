@@ -43,3 +43,8 @@ def test_add_faulty_custom_delimiter():
     with pytest.raises(ValueError) as error_info:
         calc.add("//;;\n1;;2")
     assert str(error_info.value) == "Invalid string provided"
+
+def test_add_multiple_charater_delimiters():
+    calc = Calculator()
+    result = calc.add("//[***]\n1***2***3")
+    assert result == 6
