@@ -58,3 +58,8 @@ def test_add_multiple_choice_delimiters_with_multichar():
     calc = Calculator()
     result = calc.add("//[**][%*]\n1**2%*3")
     assert result == 6
+
+def test_add_greater_than_Thousand():
+    calc = Calculator()
+    result = calc.add("1001,2")
+    assert result == 2
