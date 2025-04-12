@@ -11,6 +11,11 @@ class Calculator:
 
             inputString = inputString.replace('\n',delimiter)
 
+            int_numbers = list(map(int,inputString.split(delimiter)))
+            negative_numbers = [num for num in int_numbers if num<0]
+            if negative_numbers:
+                raise Exception("negatives not allowed: "+','.join(map(str,negative_numbers)))
+
             res=sum(map(int,inputString.split(delimiter)))
             return res
         except ValueError:
