@@ -26,5 +26,5 @@ Implement a calculator that handles numbers inside a string and using Test-Drive
 - handle negative numbers
 - handle faulty custom delimiter
 - handle multiple character delimiters
-
+- handle multiple choice delimiters
 

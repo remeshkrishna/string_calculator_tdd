@@ -48,3 +48,8 @@ def test_add_multiple_charater_delimiters():
     calc = Calculator()
     result = calc.add("//[***]\n1***2***3")
     assert result == 6
+
+def test_add_multiple_choice_delimiters():
+    calc = Calculator()
+    result = calc.add("//[*][%]\n1*2%3")
+    assert result == 6
