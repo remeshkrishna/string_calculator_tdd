@@ -7,6 +7,8 @@ class Calculator:
             if inputString.startswith("//"):
                 parts = inputString.split('\n',1)
                 delimiter = parts[0].replace('//','')
+                if len(delimiter)>1:
+                    raise ValueError
                 inputString = parts[1]
 
             inputString = inputString.replace('\n',delimiter)
