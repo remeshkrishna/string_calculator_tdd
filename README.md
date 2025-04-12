@@ -21,4 +21,5 @@ Implement a calculator that handles numbers inside a string and using Test-Drive
 - handle addition of one number: function should return number itself
 - handle invalid single character: should raise value error
 - handle comma seperated numbers 
+- handle string with newline and comma
 
