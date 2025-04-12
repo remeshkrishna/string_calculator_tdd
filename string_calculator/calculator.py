@@ -4,15 +4,22 @@ class Calculator:
             if inputString=="":
                 return 0
             delimiter = ','
+            delimiters_list = []
 
             if inputString.startswith("//"):
                 [delimiter_part,inputString] = inputString.split('\n',1)
                 if delimiter_part.startswith("//["):
                     delimiter = delimiter_part[3:len(delimiter_part)-1]
+                    delimiters_list = delimiter.split('][')
+                    if len(delimiters_list)>1:
+                        delimiter=delimiters_list[0]
                 else:
                     delimiter = delimiter_part[2:]
                     if(len(delimiter)>1):
                         raise ValueError
+                
+            for d in delimiters_list:
+                inputString = inputString.replace(d,delimiter)
 
             inputString = inputString.replace('\n',delimiter)
 
