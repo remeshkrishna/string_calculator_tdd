@@ -9,7 +9,7 @@ Implement a calculator that handles numbers inside a string and using Test-Drive
 - pip install -r .\requirements.txt
 - $env:PYTHONPATH = "."
 - For running testcases,execute: **pytest**
-  ![alt text](screenshots/image.png)
+  ![alt text](screenshots/image-2.png)
 
 - For running the calculator, execute: **python main.py** 
   ![alt text](screenshots/image.png)
