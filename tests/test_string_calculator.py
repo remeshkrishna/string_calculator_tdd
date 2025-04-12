@@ -37,3 +37,9 @@ def test_add_negative_numbers():
     with pytest.raises(Exception) as err_info:
         calc.add("-10,-5")
     assert str(err_info.value) == "negatives not allowed: -10,-5"
+
+def test_add_faulty_custom_delimiter():
+    calc=Calculator()
+    with pytest.raises(ValueError) as error_info:
+        calc.add("//;;\n1;;2")
+    assert str(error_info.value) == "Invalid string provided"
