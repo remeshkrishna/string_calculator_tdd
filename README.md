@@ -22,4 +22,5 @@ Implement a calculator that handles numbers inside a string and using Test-Drive
 - handle invalid single character: should raise value error
 - handle comma seperated numbers 
 - handle string with newline and comma
+- handle custom delimiter
 

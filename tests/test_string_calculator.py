@@ -26,3 +26,8 @@ def test_add_newline_with_comma():
     calc=Calculator()
     result=calc.add("1\n2,3")
     assert result==6
+
+def test_add_with_custom_delimiter():
+    calc=Calculator()
+    result=calc.add("//;\n1;2")
+    assert result==3
