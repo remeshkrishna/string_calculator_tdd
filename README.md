@@ -28,4 +28,5 @@ Implement a calculator that handles numbers inside a string and using Test-Drive
 - handle multiple character delimiters
 - handle multiple choice delimiters
 - handle multiple choice delimiters with multiple characters
+- handle numbers greater than 1000
 
