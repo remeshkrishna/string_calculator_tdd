@@ -16,7 +16,7 @@ class Calculator:
             if negative_numbers:
                 raise Exception("negatives not allowed: "+','.join(map(str,negative_numbers)))
 
-            res=sum(map(int,inputString.split(delimiter)))
+            res=sum(int_numbers)
             return res
         except ValueError:
             raise ValueError("Invalid string provided")
