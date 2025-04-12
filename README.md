@@ -1,32 +1,16 @@
 # string_calculator_tdd
 Implement a calculator that handles numbers inside a string and using Test-Driven-Development approach
 
-# Steps
-- **create virtual environment**
-    python -m venv mycalcvenv
-- **Activate virtual environment** 
-    .\mycalcvenv\Scripts\Activate.ps1
-- **create requirements.txt with configuration**
-    pytest
-- **install pytest by running requirements.txt**
-    pip install -r requirements.txt
-- **Create test_string_calculator.py under ./tests**
-- **Create pytest.ini and specify test folder**
-- **Create string_calculator folder under the root folder and add __init__.py to import as module**
-- **Create a calculator.py under string_calculator folder with an empty Calculator class**
-- **Configure Python: Configure Tests in vscode**
+# Steps to run/test the app - Execute below steps in terminal
+- git clone https://github.com/remeshkrishna/string_calculator_tdd.git
+- cd string_calculator_tdd
+- python -m venv mytestvenv
+- .\mytestvenv\Scripts\Activate.ps1 (Windows)
+- pip install -r .\requirements.txt
+- $env:PYTHONPATH = "."
+- For running testcases,execute: **pytest**
+- For running the calculator, execute: **python main.py** 
 
-# TestCases
-- **handle empty string :** function should return 0
-- **handle addition of one number:** function should return number itself
-- **handle invalid single character:** should raise value error
-- **handle comma seperated numbers** 
-- **handle string with newline and comma**
-- **handle custom delimiter**
-- **handle negative numbers**
-- **handle faulty custom delimiter**
-- **handle multiple character delimiters**
-- **handle multiple choice delimiters**
-- **handle multiple choice delimiters with multiple characters**
-- **handle numbers greater than 1000**
+# For more details on the project, visit https://docs.google.com/document/d/1qeis5cB3MyKE2A6aTdLe33S3GIibOjLg5Gd35CzpM1A/edit?tab=t.5qhe26na6fb9#heading=h.tr3u36k8jvt3
+
 
