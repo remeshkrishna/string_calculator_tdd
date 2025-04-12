@@ -4,10 +4,14 @@ class Calculator:
             if inputString=="":
                 return 0
             delimiter = ','
-            if inputString.startswith("//"):
+            if inputString.startswith("//["):
+                parts = inputString.split('\n',1)
+                delimiter = parts[0].replace('//[','').replace(']','')
+                inputString = parts[1]
+            elif inputString.startswith("//"):
                 parts = inputString.split('\n',1)
                 delimiter = parts[0].replace('//','')
-                if len(delimiter)>1:
+                if(len(delimiter)>1):
                     raise ValueError
                 inputString = parts[1]
 
